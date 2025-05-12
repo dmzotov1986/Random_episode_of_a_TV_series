@@ -15,7 +15,7 @@ struct episode{//данные эпизода
 	{105,1,1,"6 сезон "}
 };
 #define episode_table_count (sizeof episodes/sizeof episodes[0])
-void search_episode_data(void){
+void search_episode(void){
 	
 }
 int main(){
