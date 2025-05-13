@@ -14,11 +14,11 @@ struct episode{//данные эпизода
 	{85,1,1,"5 сезон "},
 	{105,1,1,"6 сезон "}
 };
-#define episode_table_count (sizeof episodes/sizeof episodes[0])
+#define episode_table_rows_count (sizeof episodes/sizeof*episodes)
 void search_episode(void){
 	
 }
 int main(){
-	printf("%f",1.0f/episode_table_count);
+	printf("%f",1.0f/episode_table_rows_count);
 	return EXIT_SUCCESS;
 }
