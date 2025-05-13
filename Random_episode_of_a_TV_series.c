@@ -16,6 +16,7 @@ struct episode{//данные эпизода
 };
 #define episode_table_rows_count (sizeof episodes/sizeof*episodes)
 void search_episode(void){
+	int search_index=54;
 	
 }
 int main(){
