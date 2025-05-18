@@ -16,9 +16,16 @@ struct episode{//данные эпизода
 };
 void search_episode(void){
 	int search_index=54;
-	struct episode*begin=episodes;
-	struct episode*next=(&episodes)[1];
-	printf("%u %u",((next-(struct episode*)0)+(begin-(struct episode*)0))/2+(struct episode*)0,&episodes[4]);
+	struct episode*caret=&episodes[4];
+	int caret_step=2;
+	int ahead=search_index-caret->index;
+	if(ahead>=0){
+		caret+=caret_step;//нужна оптимизация в коде?
+		caret_step>>=1;
+		if(!caret_step){
+			
+		}
+	}
 }
 int main(){
 	search_episode();
